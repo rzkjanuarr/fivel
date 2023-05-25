@@ -1,9 +1,10 @@
-import Companies from "@/components/Companies";
-import Everything from "@/components/Everything";
-import HeroBanner from "@/components/HeroBanner";
-import JoinFivel from "@/components/JoinFivel";
-import PopularServices from "@/components/PopularServices";
-import Services from "@/components/Services";
+import Companies from "@/components/Landing/Companies";
+import Everything from "@/components/Landing/Everything";
+import FivelBusiness from "@/components/Landing/FivelBusiness";
+import HeroBanner from "@/components/Landing/HeroBanner";
+import JoinFivel from "@/components/Landing/JoinFivel";
+import PopularServices from "@/components/Landing/PopularServices";
+import Services from "@/components/Landing/Services";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <PopularServices />
       <Everything />
       <Services />
+      <FivelBusiness />
       <JoinFivel />
     </div>
   );
