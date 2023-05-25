@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { BsSearch } from "react-icons/bs";
 
 function HeroBanner() {
   const router = useRouter();
@@ -75,12 +76,12 @@ function HeroBanner() {
           <div className="relative">
             <input
               type="text"
-              className="h-14 w-[450px] pl-10 rounded-md rounded-r-none"
-              placeholder="Try building a website for your business"
+              className="h-14 w-[450px] pl-10 font-bold rounded-md rounded-r-none "
+              placeholder="Try building a website for your business.."
             />
           </div>
-          <button className="bg-[#10BF73] text-white px-12 text-lg rounded-r-md">
-            Search
+          <button className="bg-[#10BF73] hover:bg-[#0C995F] text-white px-12 text-lg rounded-r-md">
+            <BsSearch />
           </button>
         </div>
         <div className="text-white flex gap-4">

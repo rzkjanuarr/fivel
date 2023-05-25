@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { Router, useRouter } from "next/router";
 import React from "react";
 
 function PopularServices() {
@@ -32,7 +32,16 @@ function PopularServices() {
       label: "Color your dreams",
       image: "/service7.jpeg",
     },
-    { name: "Translation", label: "Go global", image: "/service8.jpeg" },
+    {
+      name: "Translation",
+      label: "Go global",
+      image: "/service8.jpeg",
+    },
+    {
+      name: "Consultant",
+      label: "Healthcare",
+      image: "/service9.jpg",
+    },
   ];
   return (
     <div className="mx-20 my-16">
@@ -44,7 +53,7 @@ function PopularServices() {
           <li
             key={name}
             className="relative cursor-pointer"
-            onClick={() => router.push(`/search?q-${name.toLowerCase()}`)}
+            onClick={() => Router.push(`/search?q-${name.toLowerCase()}`)}
           >
             <div className="absolute z-10 text-white left-5 top-4">
               <span>{label}</span>
